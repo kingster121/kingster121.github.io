@@ -24,7 +24,7 @@ Singapore University of Technology and Design, Bachelor (2023 - Present)
 - Research Intern @ Treehouse (Dec 2022 - May 2023)
 
 ### Cool Projects
-- FPGA: This is another school project where we learn to programme a field programmable gate array (FPGA). Initially, I was thinking what is the point of such low-levels programming but as time passes and I learnt more aobut the range of application, I was very impressed by its utility in regards to speed and parallel processnig.
+- FPGA (Tap of War): Learning about field programmable gate array (FPGA) was interesting, my opinion went from, what is the point of this to being very impressed with its utility in regards to speed and parallel processing as I learn more about it. Created a game using Alchitry Lab's Au Board, here is the [video](https://studio.youtube.com/video/6tsm4qkcwFQ/edit).
 - Design Thinking Innovation: This was a term 2 module in SUTD where we have to come up with solutions to a problem. The main challenge for me was identifying the problem and the context (user and culture). Thankfully, we managed to overcome it and came up with a solution that combines nature, shade and artistic design. Some of the technology used that was new to me was the working with PDLC film and CV. Here is the [video](https://youtu.be/yA7ak7VMIGc) showcasing the functional prototype that I have worked on.
 - RoboClash: This was my first time working on an actual robotic project and the burning of midnight oil with a team that I enjoy spending time was great! Helped me appreciate the difficulty of making a robot "just go straight".
 - Building a neural network from scratch: With just basic Python (no libraries) and understanding how it actually works behind the hood
