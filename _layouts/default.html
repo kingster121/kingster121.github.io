@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+{% include head.html %}
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="site-name" href="{{ '/' | relative_url }}">Qin Xin</a>
+    <nav aria-label="Main">
+      <ul>
+        {%- assign nav = "Home|/,Projects|/projects/,Life|/life/" | split: "," -%}
+        {%- for item in nav -%}
+          {%- assign parts = item | split: "|" -%}
+          {%- assign href = parts[1] -%}
+          {%- if href == "/" -%}
+            {%- if page.url == "/" %}{% assign current = true %}{% else %}{% assign current = false %}{% endif -%}
+          {%- else -%}
+            {%- assign prefix = page.url | slice: 0, href.size -%}
+            {%- if prefix == href %}{% assign current = true %}{% else %}{% assign current = false %}{% endif -%}
+          {%- endif %}
+        <li><a href="{{ href | relative_url }}"{% if current %} aria-current="page"{% endif %}>{{ parts[0] }}</a></li>
+        {%- endfor %}
+        <li><a href="{{ '/resume.pdf' | relative_url }}">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    {% include links.html %}
+    <p>© {{ site.time | date: "%Y" }} Qin Xin · Built with Jekyll on GitHub Pages</p>
+  </footer>
+</body>
+</html>

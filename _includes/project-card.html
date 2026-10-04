@@ -1,0 +1,10 @@
+<li class="card">
+  {%- if include.project.period %}
+  <p class="card-period date">{{ include.project.period }}</p>
+  {%- endif %}
+  <h3><a href="{{ include.project.url | relative_url }}">{{ include.project.title }}</a></h3>
+  <p>{{ include.project.description }}</p>
+  {%- if include.project.tags.size > 0 %}
+  <ul class="tags" aria-label="Tags">{% for tag in include.project.tags %}<li>{{ tag }}</li>{% endfor %}</ul>
+  {%- endif %}
+</li>

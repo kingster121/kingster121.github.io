@@ -1,0 +1,26 @@
+---
+title: Home
+description: "Qin Xin — securing and investigating industrial systems. OT/ICS security and DFIR. GICSP, GIAC Advisory Board, founder of DeskOps. Available June 2027."
+---
+<section class="intro">
+  <h1>Securing and investigating industrial systems — OT/ICS security &amp; DFIR</h1>
+  <p class="meta">GICSP · GIAC Advisory Board · Founder of DeskOps · Available June 2027</p>
+  <p>I'm Qin Xin, a final-year Computer Science and Design student at SUTD. My main focus is OT/ICS security: most of what I know comes from the GICSP and from building <a href="{{ '/projects/deskops/' | relative_url }}">DeskOps</a>, a hands-on OT security training platform for students. Alongside that, I'm building up digital forensics and incident response (DFIR), the other half of the job: working out what happened once something has gone wrong.</p>
+</section>
+
+<section class="home-section" aria-labelledby="currently">
+  <h2 id="currently">Currently</h2>
+  <p>Right now I'm splitting my time between learning and building. At school I'm deep into compiler design, and on my own I'm working through network security and digital forensics, which is slowly turning packet captures and memory dumps from intimidating into fun. Most of my remaining time goes into DeskOps, where the team is gearing up for our first workshops: one at NYP in December, and a CSA-funded one in January.</p>
+</section>
+
+<section class="home-section" aria-labelledby="featured">
+  <h2 id="featured">Featured projects</h2>
+  {%- assign featured = site.projects | where: "featured", true %}
+  {%- include sort-projects.html projects=featured %}
+  <ul class="cards">
+    {%- for project in sorted_projects limit: 3 %}
+    {% include project-card.html project=project %}
+    {%- endfor %}
+  </ul>
+  <p><a href="{{ '/projects/' | relative_url }}">All projects →</a></p>
+</section>

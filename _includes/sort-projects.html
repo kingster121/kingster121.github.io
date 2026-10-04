@@ -1,0 +1,9 @@
+{%- comment -%}
+  Sorts include.projects newest first and stores the result in `sorted_projects`:
+  ongoing projects first, then by sort_date descending, then any without a sort_date.
+{%- endcomment -%}
+{%- assign _ongoing = include.projects | where_exp: "p", "p.ongoing == true" | sort: "sort_date", "first" | reverse -%}
+{%- assign _rest = include.projects | where_exp: "p", "p.ongoing != true" -%}
+{%- assign _dated = _rest | where_exp: "p", "p.sort_date" | sort: "sort_date" | reverse -%}
+{%- assign _undated = _rest | where_exp: "p", "p.sort_date == nil" | sort: "title" -%}
+{%- assign sorted_projects = _ongoing | concat: _dated | concat: _undated -%}
