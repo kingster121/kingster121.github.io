@@ -14,7 +14,7 @@ Plain Jekyll with custom layouts and no theme, so GitHub Pages builds it directl
 | `_projects/` | One Markdown file per project |
 | `_layouts/`, `_includes/` | HTML templates |
 | `assets/style.css` | The only stylesheet |
-| `resume.pdf` | Linked from the nav (add it at the repo root) |
+| `resume.pdf` | Résumé, linked from the nav and footer |
 
 ## Adding a project
 
