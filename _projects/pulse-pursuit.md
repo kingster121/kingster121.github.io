@@ -10,6 +10,8 @@ tags: [FPGA, Alchitry Au]
 links:
   - label: Watch the video on YouTube
     url: https://www.youtube.com/watch?v=6tsm4qkcwFQ
+  - label: Source code on GitHub
+    url: https://github.com/kingster121/fpga-pulse-pursuit/
 ---
 
 Learning about field-programmable gate arrays (FPGAs) was interesting. My opinion went from "what is the point of this?" to being very impressed by their speed and parallel processing the more I learnt.
