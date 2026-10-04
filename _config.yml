@@ -12,7 +12,7 @@ author:
 
 # Order of the groups on /projects/
 project_categories:
-  - OT & Security
+  - OT Security
   - DFIR
   - Hardware
   - Other

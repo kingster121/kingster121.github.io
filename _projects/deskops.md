@@ -4,7 +4,7 @@ description: "A hands-on OT security training platform built to give students th
 period: "2025 – Present"
 sort_date: 2025-09-01
 ongoing: true
-category: OT & Security
+category: OT Security
 featured: true
 tags: [OT/ICS, Purdue Model, IEC 62443, MITRE ATT&CK for ICS, OPNsense]
 ---

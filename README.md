@@ -24,7 +24,7 @@ Create `_projects/<slug>.md`. It's published at `/projects/<slug>/`.
 ---
 title: My Project
 description: "One sentence. Used on cards, in search results and in link previews."
-category: OT & Security   # OT & Security | DFIR | Hardware | Other
+category: OT Security   # OT Security | DFIR | Hardware | Other
 featured: true            # optional: show on Home (first 3, same order as /projects/)
 period: "2025 – 2026"     # text shown on cards and the project page
 sort_date: 2025-01-01     # start date, used for ordering (newest first)
