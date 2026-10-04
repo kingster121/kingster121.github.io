@@ -27,10 +27,7 @@ The lab is laid out along the Purdue Model, so students can see where each devic
 - **Open vSwitch VLANs** — segment the network inside the lab.
 
 <figure>
-  <div class="placeholder" role="img" aria-label="Placeholder for the DeskOps architecture diagram">TODO: architecture diagram</div>
-  <!-- TODO: replace the placeholder above with:
-  <img src="/assets/img/deskops-architecture.png" alt="DeskOps network architecture across Purdue levels, with OPNsense between the IT and OT zones and Open vSwitch VLANs inside the OT zone">
-  -->
+  <img src="{{ '/assets/img/deskops-architecture.webp' | relative_url }}" width="1789" height="2000" loading="lazy" alt="DeskOps architecture mapped to the Purdue Model. Level 4–5 (Enterprise/IT): a Kali Linux attacker acting as a compromised IT host. Level 3.5 (IT/OT boundary): a firewall routing between all VLANs. Level 3 (Operations): an Open vSwitch switch carrying VLANs 10, 20 and 30, and a Windows engineering workstation on VLAN 20 with RDP on port 3389. Level 2 (Supervisory): a FUXA HMI on VLAN 10, port 1881. Level 1 (Basic control): an OpenPLC PLC on VLAN 30 speaking Modbus TCP on port 502. Level 0 (Process): simulated field devices, a level sensor and pump, hardwired to the PLC. A dashed line shows a passive mirror from the switch to the Kali host.">
   <figcaption>DeskOps architecture across the Purdue Model levels.</figcaption>
 </figure>
 
