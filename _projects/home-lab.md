@@ -1,6 +1,9 @@
 ---
 title: Home Lab
 description: "A refurbished old PC turned NAS, now running TrueNAS with ZFS, Immich for photos and Tailscale for remote access."
+period: "2025 – Present"
+sort_date: 2025-01-01 # TODO: set the real start month if you want finer ordering
+ongoing: true
 category: Other
 featured: true
 tags: [TrueNAS, ZFS, Immich, Tailscale]
