@@ -1,6 +1,6 @@
 ---
 title: Life
-description: "The non-work side of Qin Xin: a community garden, homelab tinkering and hobbies."
+description: "The non-work side of Qin Xin: a community garden, how I ended up in security, and martial arts."
 ---
 
 <header class="page-head" markdown="0">
@@ -14,21 +14,16 @@ I've been helping out at a community garden. Since there was quite an abundance 
 
 <!-- TODO: what you're growing, what's thriving, and what the bugs got to first. A photo would be great here. -->
 
-## 🖥️ Homelab tinkering
-
-The homelab started life as a SUPER OLD PC that I refurbished into a NAS by installing TrueNAS on it. The catch: it only had 2GB of RAM... RAMageddon fr. The plan back then was to add more RAM, set up Pi-hole on a Raspberry Pi I borrowed from a friend, and install Jellyfin for media hosting once the RAM situation was sorted.
-
-<!-- TODO: how that turned out — did the RAM upgrade, Pi-hole and Jellyfin happen? -->
-
-These days it runs TrueNAS with ZFS, Immich and Tailscale. The current setup is on the [Home Lab project page]({{ '/projects/home-lab/' | relative_url }}).
-
 ## 🧩 How I ended up in security
 
-I took a look around the blockchain sphere and found it too financialised for my liking. So I took a step back and looked around, and with the rise of AI, big data and IT/OT convergence, cybersecurity seemed more important than ever.
+Back in 2022 I dabbled a bit in AI (that's when I built a neural network from scratch), but it never really clicked for me. So I went to take a look around cybersecurity, and boy was it interesting. I haven't left since.
 
-For IT security, I've been learning through CTFs and TryHackMe. The problem-solving aspect is challenging, and I love a good challenge :D
+OT security is the part that really resonated with me. Industrial systems are inherently insecure, full of legacy protocols and equipment that were never designed with security in mind, and you still have to protect them. To me it feels like playing a game on a harder difficulty level.
 
-## 🎲 Other hobbies
+On the IT side, I've been getting into DFIR through CyberDefenders.
 
-<!-- TODO: hobbies go here. -->
-TODO: hobbies.
+## 🥊 Martial arts
+
+I started with Brazilian jiu-jitsu back in 2018, but about six months in I got injured and spent months on crutches, so martial arts went on a long pause. In university I picked up boxing and stuck with it for another six months or so, but the constant sparring started catching up with me. For days after a session I'd feel noticeably slower, like I had to think about thinking before I could reply to someone. People call it brain fog, and it was my cue to stop.
+
+Since September 2026 I've been learning Muay Thai, and it's easily the most fun I've had in any martial art so far. I do believe you have to spar to get truly good, but if the brain fog comes back, I'm happy to stick to drills and technique and treat it as a way to stay fit.

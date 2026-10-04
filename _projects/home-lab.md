@@ -9,12 +9,18 @@ featured: true
 tags: [TrueNAS, ZFS, Immich, Tailscale]
 ---
 
-I refurbished a SUPER OLD PC into a NAS. It now runs:
+## How it started
+
+The homelab started life as a SUPER OLD PC that I refurbished into a NAS by installing TrueNAS on it. The catch: it only had 2GB of RAM... RAMageddon fr. The plan back then was to add more RAM, set up Pi-hole on a Raspberry Pi I borrowed from a friend, and install Jellyfin for media hosting once the RAM situation was sorted.
+
+<!-- TODO: how that turned out — did the RAM upgrade, Pi-hole and Jellyfin happen? -->
+
+These days it runs TrueNAS with ZFS, Immich and Tailscale. Here's the [current setup](#current-setup).
+
+## Current setup
 
 - **TrueNAS** with **ZFS** for storage
 - **Immich** for self-hosted photo backup
 - **Tailscale** so I can reach it from anywhere without opening ports
 
 <!-- TODO: hardware specs, pool layout (mirror? RAIDZ?), and anything you learnt setting it up. -->
-
-How it got here (and how much RAM it used to have) is on the [Life]({{ '/life/' | relative_url }}) page.
