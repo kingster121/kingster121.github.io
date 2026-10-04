@@ -3,7 +3,6 @@ title: Home Lab
 description: "A refurbished old PC turned NAS, now running TrueNAS with ZFS, Immich for photos and Tailscale for remote access."
 category: Other
 featured: true
-order: 2
 tags: [TrueNAS, ZFS, Immich, Tailscale]
 ---
 

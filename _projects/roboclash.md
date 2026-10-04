@@ -1,8 +1,9 @@
 ---
 title: RoboClash
 description: "My first real robotics project, and a lesson in how hard it is to make a robot just go straight."
+period: "2024"
+sort_date: 2024-01-01
 category: Hardware
-order: 5
 tags: [Robotics]
 ---
 

@@ -1,8 +1,9 @@
 ---
 title: Design Thinking Innovation
 description: "A functional prototype combining nature, shade and artistic design, using PDLC film and computer vision."
+period: "2024"
+sort_date: 2024-06-01
 category: Hardware
-order: 4
 youtube: yA7ak7VMIGc
 tags: [PDLC film, Computer vision, Prototyping]
 links:

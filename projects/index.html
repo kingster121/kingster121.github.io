@@ -7,17 +7,16 @@ description: "Projects by Qin Xin across OT & security, DFIR, hardware and more,
 </header>
 
 {%- for category in site.project_categories %}
-{%- assign projects = site.projects | where: "category", category | sort: "order", "last" %}
+{%- assign projects = site.projects | where: "category", category %}
+{%- if projects.size > 0 %}
+{%- include sort-projects.html projects=projects %}
 <section aria-labelledby="cat-{{ category | slugify }}">
   <h2 id="cat-{{ category | slugify }}">{{ category }}</h2>
-  {%- if projects.size > 0 %}
   <ul class="cards">
-    {%- for project in projects %}
+    {%- for project in sorted_projects %}
     {% include project-card.html project=project %}
     {%- endfor %}
   </ul>
-  {%- else %}
-  <p class="muted">Nothing here yet.</p>
-  {%- endif %}
 </section>
+{%- endif %}
 {%- endfor %}

@@ -1,9 +1,10 @@
 ---
 title: "Tap of War (FPGA)"
 description: "A game built on Alchitry Labs' Au FPGA board."
+period: "2025"
+sort_date: 2025-01-01
 category: Hardware
 featured: true
-order: 3
 youtube: 6tsm4qkcwFQ
 tags: [FPGA, Alchitry Au]
 links:

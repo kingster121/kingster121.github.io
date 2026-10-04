@@ -1,10 +1,11 @@
 ---
 title: DeskOps
 description: "A hands-on OT security training platform built to give students their first touch-point with industrial control system security."
+period: "2025 – Present"
+sort_date: 2025-09-01
+ongoing: true
 category: OT & Security
 featured: true
-order: 1
-# period: TODO e.g. "2024 – present" (shown next to the category)
 tags: [OT/ICS, Purdue Model, IEC 62443, MITRE ATT&CK for ICS, OPNsense]
 ---
 

@@ -1,8 +1,9 @@
 ---
 title: Neural network from scratch
 description: "A neural network built in plain Python, with no libraries, to understand how it actually works under the hood."
+period: "2022"
+sort_date: 2022-01-01
 category: Other
-order: 6
 tags: [Python, Machine learning]
 ---
 

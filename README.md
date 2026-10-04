@@ -25,9 +25,10 @@ Create `_projects/<slug>.md`. It's published at `/projects/<slug>/`.
 title: My Project
 description: "One sentence. Used on cards, in search results and in link previews."
 category: OT & Security   # OT & Security | DFIR | Hardware | Other
-featured: true            # optional: show on Home (first 3 by `order`)
-order: 4                  # optional: sort order within lists (lower comes first)
-period: "2025 – 2026"     # optional
+featured: true            # optional: show on Home (first 3, same order as /projects/)
+period: "2025 – 2026"     # text shown on cards and the project page
+sort_date: 2025-01-01     # start date, used for ordering (newest first)
+ongoing: true             # optional: sorts before everything else
 tags: [PLC, Modbus]       # optional
 youtube: VIDEO_ID         # optional: the ID after watch?v=
 images:                   # optional: shown after the text
@@ -42,7 +43,7 @@ links:                    # optional
 Write the project here in Markdown.
 ```
 
-Put images in `assets/img/`. Add new categories to `project_categories` in `_config.yml`.
+Put images in `assets/img/`. Add new categories to `project_categories` in `_config.yml`. Categories with no projects are hidden. Projects without a `sort_date` are listed last in their category.
 
 ## Local preview
 

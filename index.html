@@ -15,9 +15,10 @@ description: "Qin Xin — securing and investigating industrial systems. OT/ICS 
 
 <section class="home-section" aria-labelledby="featured">
   <h2 id="featured">Featured projects</h2>
-  {%- assign featured = site.projects | where: "featured", true | sort: "order", "last" %}
+  {%- assign featured = site.projects | where: "featured", true %}
+  {%- include sort-projects.html projects=featured %}
   <ul class="cards">
-    {%- for project in featured limit: 3 %}
+    {%- for project in sorted_projects limit: 3 %}
     {% include project-card.html project=project %}
     {%- endfor %}
   </ul>
