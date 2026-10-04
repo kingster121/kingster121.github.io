@@ -1,0 +1,48 @@
+title: "Qin Xin — OT Security & DFIR"
+description: "Qin Xin works on OT/ICS security and digital forensics & incident response (DFIR). GICSP, GIAC Advisory Board, founder of DeskOps."
+url: "https://kingster121.github.io"
+baseurl: ""
+lang: en
+
+author:
+  name: Qin Xin
+  github: kingster121
+  linkedin: "" # TODO: your LinkedIn profile URL, e.g. https://www.linkedin.com/in/your-handle/
+  email: "" # TODO: the email address you want shown publicly
+
+# Order of the groups on /projects/
+project_categories:
+  - OT & Security
+  - DFIR
+  - Hardware
+  - Other
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+  notes:
+    output: true
+    permalink: /notes/:title/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: note
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

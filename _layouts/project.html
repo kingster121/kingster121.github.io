@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<article>
+  <header class="page-head">
+    <p class="meta"><a href="{{ '/projects/' | relative_url }}">Projects</a> / {{ page.category }}{% if page.period %} · {{ page.period }}{% endif %}</p>
+    <h1>{{ page.title }}</h1>
+    {%- if page.description %}
+    <p class="lede">{{ page.description }}</p>
+    {%- endif %}
+    {%- if page.tags.size > 0 %}
+    <ul class="tags" aria-label="Tags">{% for tag in page.tags %}<li>{{ tag }}</li>{% endfor %}</ul>
+    {%- endif %}
+  </header>
+
+  {%- if page.youtube %}
+  <figure class="video">
+    <iframe src="https://www.youtube-nocookie.com/embed/{{ page.youtube }}" title="Video: {{ page.title | escape }}" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+  </figure>
+  {%- endif %}
+
+  {{ content }}
+
+  {%- for img in page.images %}
+  <figure>
+    <img src="{{ img.src | relative_url }}" alt="{{ img.alt | escape }}" loading="lazy">
+    {%- if img.caption %}<figcaption>{{ img.caption }}</figcaption>{% endif %}
+  </figure>
+  {%- endfor %}
+
+  {%- if page.links %}
+  <h2>Links</h2>
+  <ul>{% for l in page.links %}<li><a href="{{ l.url }}">{{ l.label }}</a></li>{% endfor %}</ul>
+  {%- endif %}
+
+  <p class="back"><a href="{{ '/projects/' | relative_url }}">← All projects</a></p>
+</article>

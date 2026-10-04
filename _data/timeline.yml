@@ -1,0 +1,41 @@
+# Shown on the home page, in this order. Newest first within each group.
+- group: Experience
+  items:
+    - role: System Test Intern
+      org: Schneider Electric
+      dates: Jul 2025 – Dec 2025
+    - role: Student Researcher
+      org: iTrust
+      dates: May 2024 – Jan 2025
+    - role: Research Intern
+      org: Treehouse
+      dates: Dec 2022 – May 2023
+
+- group: Certifications
+  items:
+    - role: Global Industrial Cyber Security Professional (GICSP)
+      org: GIAC
+      dates: "" # TODO: year obtained
+      note: SANS course covering everything essential to ICS. A favourite topic was how region-wide SCADA systems differ from single-plant ones.
+    - role: GIAC Advisory Board
+      org: GIAC
+      dates: "" # TODO: year joined
+      note: Joined after scoring 94% on the GICSP exam.
+
+- group: Education
+  items:
+    - role: Bachelor of Engineering (Computer Science and Design)
+      org: Singapore University of Technology and Design
+      dates: 2023 – 2027 (expected)
+    - role: Diploma in Engineering Science
+      org: Ngee Ann Polytechnic
+      dates: 2017 – 2020
+
+- group: Other experience
+  items:
+    - role: Teacher
+      org: Miles Education
+      dates: Mar 2024 – Oct 2024
+    - role: Teacher
+      org: NK Robotics
+      dates: Jun 2023 – Nov 2023

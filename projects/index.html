@@ -1,0 +1,23 @@
+---
+title: Projects
+description: "Projects by Qin Xin across OT & security, DFIR, hardware and more, including DeskOps, an OT security training platform for students."
+---
+<header class="page-head">
+  <h1>Projects</h1>
+</header>
+
+{%- for category in site.project_categories %}
+{%- assign projects = site.projects | where: "category", category | sort: "order", "last" %}
+<section aria-labelledby="cat-{{ category | slugify }}">
+  <h2 id="cat-{{ category | slugify }}">{{ category }}</h2>
+  {%- if projects.size > 0 %}
+  <ul class="cards">
+    {%- for project in projects %}
+    {% include project-card.html project=project %}
+    {%- endfor %}
+  </ul>
+  {%- else %}
+  <p class="muted">Nothing here yet. In the meantime, see the <a href="{{ '/notes/' | relative_url }}">notes</a>.</p>
+  {%- endif %}
+</section>
+{%- endfor %}
