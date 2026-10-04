@@ -1,5 +1,5 @@
 ---
-title: "Tap of War (FPGA)"
+title: "Pulse Pursuit (FPGA)"
 description: "A game built on Alchitry Labs' Au FPGA board."
 period: "2025"
 sort_date: 2025-01-01
@@ -14,6 +14,6 @@ links:
 
 Learning about field-programmable gate arrays (FPGAs) was interesting. My opinion went from "what is the point of this?" to being very impressed by their speed and parallel processing the more I learnt.
 
-I created a game, Tap of War, on Alchitry Labs' Au board.
+I created a game, Pulse Pursuit, on Alchitry Labs' Au board.
 
 <!-- TODO: how the game works, what you built, and the module it was for. -->
