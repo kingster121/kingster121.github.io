@@ -7,7 +7,7 @@
     <a class="site-name" href="{{ '/' | relative_url }}">Qin Xin</a>
     <nav aria-label="Main">
       <ul>
-        {%- assign nav = "Home|/,Projects|/projects/,Notes|/notes/,Life|/life/" | split: "," -%}
+        {%- assign nav = "Home|/,Projects|/projects/,Life|/life/" | split: "," -%}
         {%- for item in nav -%}
           {%- assign parts = item | split: "|" -%}
           {%- assign href = parts[1] -%}

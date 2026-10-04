@@ -8,17 +8,12 @@ description: "Qin Xin — securing and investigating industrial systems. OT/ICS 
   <p>I'm Qin Xin, a final-year Computer Science and Design student at SUTD. My main focus is OT/ICS security: most of what I know comes from the GICSP and from building <a href="{{ '/projects/deskops/' | relative_url }}">DeskOps</a>, a hands-on OT security training platform for students. Alongside that, I'm building up digital forensics and incident response (DFIR), the other half of the job: working out what happened once something has gone wrong.</p>
 </section>
 
-<section aria-labelledby="currently">
+<section class="home-section" aria-labelledby="currently">
   <h2 id="currently">Currently</h2>
-  <ul class="currently">
-    <li>Building DeskOps and migrating it to AWS so students can use it from a browser</li>
-    <li>Running a workshop at NYP <span class="date">Dec 2026</span></li> <!-- TODO: what is the NYP workshop about? (DeskOps? audience?) -->
-    <li>Running a CSA-funded DeskOps workshop <span class="date">Jan 2027</span></li>
-    <li>In my final year at SUTD</li>
-  </ul>
+  <p>Right now I'm splitting my time between learning and building. At school I'm deep into compiler design, and on my own I'm working through network security and digital forensics, which is slowly turning packet captures and memory dumps from intimidating into fun. Most of my remaining time goes into DeskOps, where the team is gearing up for our first workshops at NYP in December and with CSA in January.</p>
 </section>
 
-<section aria-labelledby="featured">
+<section class="home-section" aria-labelledby="featured">
   <h2 id="featured">Featured projects</h2>
   {%- assign featured = site.projects | where: "featured", true | sort: "order", "last" %}
   <ul class="cards">
@@ -27,27 +22,4 @@ description: "Qin Xin — securing and investigating industrial systems. OT/ICS 
     {%- endfor %}
   </ul>
   <p><a href="{{ '/projects/' | relative_url }}">All projects →</a></p>
-</section>
-
-<section aria-labelledby="timeline">
-  <h2 id="timeline">Timeline</h2>
-  {%- for group in site.data.timeline %}
-  <h3>{{ group.group }}</h3>
-  <ol class="timeline">
-    {%- for item in group.items %}
-    <li>
-      <span class="date">{{ item.dates }}</span>
-      <div>
-        <strong>{{ item.role }}</strong> · {{ item.org }}
-        {%- if item.note %}<p>{{ item.note }}</p>{% endif %}
-      </div>
-    </li>
-    {%- endfor %}
-  </ol>
-  {%- endfor %}
-</section>
-
-<section aria-labelledby="contact">
-  <h2 id="contact">Get in touch</h2>
-  {% include links.html %}
 </section>

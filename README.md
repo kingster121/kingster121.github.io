@@ -10,11 +10,8 @@ Plain Jekyll with custom layouts and no theme, so GitHub Pages builds it directl
 |------|------------|
 | `index.html` | Home |
 | `projects/index.html` | Projects, grouped by `category` |
-| `notes/index.html` | Notes, newest first |
 | `life/index.md` | Life page |
 | `_projects/` | One Markdown file per project |
-| `_notes/` | One Markdown file per note |
-| `_data/timeline.yml` | Experience, certifications and education on Home |
 | `_layouts/`, `_includes/` | HTML templates |
 | `assets/style.css` | The only stylesheet |
 | `resume.pdf` | Linked from the nav (add it at the repo root) |
@@ -47,20 +44,6 @@ Write the project here in Markdown.
 
 Put images in `assets/img/`. Add new categories to `project_categories` in `_config.yml`.
 
-## Adding a note
-
-Create `_notes/YYYY-MM-DD-<slug>.md`. It's published at `/notes/<slug>/`.
-
-```yaml
----
-title: "My note"
-date: 2026-10-04
-description: "One sentence for search results and link previews."
-tags: [DFIR, Volatility 3]
-published: false   # drafts: remove this line (or set true) to publish
----
-```
-
 ## Local preview
 
 Needs Ruby and Bundler.
@@ -70,4 +53,4 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Then open http://localhost:4000. Add `--unpublished` to see drafts.
+Then open http://localhost:4000.
