@@ -95,6 +95,7 @@ th, td { text-align: left; padding: 0.4rem 0.5rem; border-bottom: 1px solid var(
 .intro .meta { margin-bottom: 1.5rem; }
 .home-section { margin-top: 4.5rem; }
 .home-section h2 { margin-top: 0; }
+.intro p, .home-section p { max-width: none; }
 
 .links { list-style: none; display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; padding: 0; }
 
